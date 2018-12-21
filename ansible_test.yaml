@@ -23,3 +23,12 @@ tasks:
       bucket: mybucket
       mode: create
       permission: public-read
+      
+   # Cluster delete example
+  - name: "mah redshift"
+    redshift:
+      command: delete
+      identifier: new_cluster
+      skip_final_cluster_snapshot: true
+      publicly_accessible: true
+      encrypted: false
